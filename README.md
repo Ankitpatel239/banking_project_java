@@ -41,17 +41,29 @@ Built with the DAO (Data Access Object) pattern for robust, maintainable, and tr
 ## 📁 Project Structure
 
 ```
-src/
-├── dao/
-│   ├── AccountDAO.java
-│   └── TransactionDAO.java
+Banking_Project_Java/
+│
 ├── db/
 │   └── DBConnection.java
+│
 ├── model/
-│   ├── Account.java
+│   └── Account.java
 │   └── Transaction.java
+│
+├── lib/
+│   └── sqlite-jdbc-3.51.1.0.jar
+│
 ├── util/
 │   └── PasswordUtil.java
+│   └── CSVUtil.java     
+│
+├── dao/
+│   └── AccountDAO.java
+│   └── TransactionDAO.java
+│
+├── service/
+│   └── BankService.java
+│
 └── Main.java
 ```
 
@@ -153,3 +165,11 @@ CREATE TABLE transactions (
 Open-source project for educational purposes.
 
 ---
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+# See .gitignore for ignored files
+# Compiled class files
+*.class
+*.csv
+*.db
